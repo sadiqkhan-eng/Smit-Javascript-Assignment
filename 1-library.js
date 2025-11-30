@@ -11,7 +11,8 @@ class Item {
 
 // Inheritance Books Items ----<> Encapsulation
 class Book extends Item {
-    #available = true; // book availability is private
+    #available = true;
+     // book availability is private
 
     checkout(){ // polymorphism 
         if (!this.#available)
@@ -22,7 +23,8 @@ class Book extends Item {
 }
 
 class Magazine extends Item {
-    #available = true; // book availability is private
+    #available = true; 
+    // book availability is private
 
     checkout(){ // polymorphism 
         if (!this.#available)
@@ -32,6 +34,8 @@ class Magazine extends Item {
     }
 }
 
+
+// Using the classes
 const book1 = new Book('Harry Potter', 'J.K. Rowling');
 const book2 = new Book('The Lord of the Rings', 'J.R.R. Tolkien');
 const Magazine1 = new Magazine('National Geographic', 'National Geographic Society');

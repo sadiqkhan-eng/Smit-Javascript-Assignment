@@ -2,7 +2,8 @@
 class Product {
     constructor(name, price) {
         this.name = name;
-        this.#price = price; // Encapsulation (private)
+        this.#price = price; 
+        // Encapsulation (private)
     }
 
     #price;
@@ -18,19 +19,21 @@ class Product {
 
 // Inheritance: Electronics
 class Electronics extends Product {
-    calculateDiscount() {  // Polymorphism
+    calculateDiscount() {  
+        // Polymorphism
         return this.getPrice() * 0.10;
     }
 }
 
 // Inheritance: Clothes
 class Clothes extends Product {
-    calculateDiscount() {  // Polymorphism
+    calculateDiscount() {  
+        // Polymorphism
         return this.getPrice() * 0.20;
     }
 }
 
-// Usage
+// Using the classes
 const laptop = new Electronics("Laptop", 100000);
 const shirt = new Clothes("Shirt", 2000);
 

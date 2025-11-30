@@ -37,7 +37,7 @@ class Truck extends Vehicle {
     }
 }
 
-// Usage
+// Using the classes
 console.log(new Car("Civic", 5000).rent());
 console.log(new Bike("Yamaha", 2000).rent());
 console.log(new Truck("Hino", 10000).rent());

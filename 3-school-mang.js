@@ -26,7 +26,8 @@ class Student extends Person {
 
 // Inheritance: Teacher
 class Teacher extends Person {
-    #salary; // Encapsulation
+    #salary; 
+    // Encapsulation
 
     constructor(name, age, salary) {
         super(name, age);
@@ -38,7 +39,7 @@ class Teacher extends Person {
     }
 }
 
-// Usage
+// Using the classes
 const st = new Student("Ali", 16, "A+");
 const tc = new Teacher("Mr. Ahmed", 35, 80000);
 

@@ -1,4 +1,5 @@
-// Abstraction: Base class
+// Abstraction: 
+// Base class
 class Account {
     constructor(owner, balance) {
         this.owner = owner;
@@ -29,19 +30,21 @@ class Account {
 
 // Inheritance: Savings Account
 class SavingsAccount extends Account {
-    calculateInterest() {  // Polymorphism
+    calculateInterest() {  
+        // Polymorphism
         return this.getBalance() * 0.07;
     }
 }
 
 // Inheritance: Current Account
 class CurrentAccount extends Account {
-    calculateInterest() {  // Polymorphism
+    calculateInterest() {  
+        // Polymorphism
         return 0;
     }
 }
 
-// Usage
+// Using the classes
 const sa = new SavingsAccount("Sadiq", 10000);
 console.log("Savings Interest:", sa.calculateInterest());
 
